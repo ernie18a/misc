@@ -1,3 +1,4 @@
+UR webRounds.py 2>&1 >/dev/null | tee a.txt
 for i in $(ls 0*.py) ; do uv run $i ; done ; UR verify.py ; echo 0230 ; date
 chown -R e:g /g ; chmod -R 2777 /g ; find /g -type d -exec chmod 2777 {} +
 sudo chown -R :g /g; sudo chmod -R 2777 /g; sudo setfacl -R -b /g; sudo setfacl -R -m u::rwx,g::rwx,o::rwx,m:rwx /g; sudo setfacl -R -d -m u::rwx,g::rwx,o::rwx,m:rwx /g; find /g -name ".git" -type d -exec sudo setfacl -R -m m:rwx {} +
