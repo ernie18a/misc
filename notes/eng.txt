@@ -1,3 +1,4 @@
+prosody
 Unsupervised Statistical Optimization
 Chain of Thought, Tree of Thoughts, Graph of Thoughts, Self-Correction, Self-Refine, Multi-Agent Debate, Self-Consistency,
 A contract-driven Python microkernel leveraging Gemini LLM reasoning and FFmpeg 8.0 for automated semantic video analysis and precision clipping.
