@@ -1,3 +1,4 @@
+/root/.local/bin/agy
 ll */*.py
 uv run --with-requirements
 for i in o n ; do rm /home/$i/.* ; chown -R $i /home/$i ; done
