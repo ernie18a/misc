@@ -1,3 +1,5 @@
+rm log ; for i in  tts.jp/sample_sarashina.py tts.jp/sample_sbv2.py tts.eng/sample_chattts.py tts.eng/sample_fishspeech.py tts.eng/sample_sesame.py stt.eng/whisper.py stt.eng/parakeet.py ; do UR $i &>>log ; do
+ne
 /root/.local/bin/agy
 ll */*.py
 uv run --with-requirements
