@@ -1,3 +1,4 @@
+ubuntu-wsl* unattended-upgrades* wsl-setup*
 follow 00.md, then follow next doc
 for i in {a,t}*.py; do uv sync --script "$i" done
 for i in *dependency*.py; do     printf '\n===== %s =====\n' "$i" >>log;     uv run "$i" >>log 2>&1 || exit $?;   done
