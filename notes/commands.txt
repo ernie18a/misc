@@ -1,3 +1,5 @@
+curl https://sdk.cloud.google.com | bash
+bash ~/.google-cloud-sdk/install.sh
 gcloud compute ssh a
 export http_proxy=http://127.0.0.1:9911
 export https_proxy=http://127.0.0.1:9911
