@@ -1,5 +1,6 @@
-    export http_proxy=http://127.0.0.1:9911
-    export https_proxy=http://127.0.0.1:9911
+gcloud compute ssh a
+export http_proxy=http://127.0.0.1:9911
+export https_proxy=http://127.0.0.1:9911
 912238511575407778606820
 ubuntu-wsl* unattended-upgrades* wsl-setup*
 follow 00.md, then follow next doc
