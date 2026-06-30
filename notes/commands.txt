@@ -1,3 +1,4 @@
+sudo npm config set allow-scripts=opencode-ai --location=global
 sudo npm install -g --allow-scripts=opencode-ai opencode-ai
 curl https://sdk.cloud.google.com | bash
 bash ~/.google-cloud-sdk/install.sh
