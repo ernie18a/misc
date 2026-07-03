@@ -1,3 +1,4 @@
+eval "$(ssh-agent -s)" ; ssh-add ~/.ssh/id_ed25519
 npm config set ignore-scripts true --location=global
 /home/e/.google-cloud-sdk/bin/gcloud
 sudo npm config set allow-scripts=opencode-ai --location=global
