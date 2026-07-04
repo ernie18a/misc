@@ -1,3 +1,4 @@
+apt-get autoremove -y ; dpkg -l | grep "^rc" | awk '{print$2}' | xargs apt-get purge -y
 eval "$(ssh-agent -s)" ; ssh-add ~/.ssh/id_ed25519
 npm config set ignore-scripts true --location=global
 /home/e/.google-cloud-sdk/bin/gcloud
