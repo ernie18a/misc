@@ -1,4 +1,4 @@
-stty -a ; stty sane 
+stty -a ; stty sane # ; stty echo
 sudo apt install -y rustc cargo build-essential pkg-config rustfmt # libssl-dev
 apt-get autoremove -y ; dpkg -l | grep "^rc" | awk '{print$2}' | xargs apt-get purge -y
 eval "$(ssh-agent -s)" ; ssh-add ~/.ssh/id_ed25519
