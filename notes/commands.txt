@@ -1,3 +1,4 @@
+WinJS.Application.restart("ms-cxh:localonly") # win # Ctrl+Shift+J # win local account
 cat plain.txt | openssl enc -aes-256-cbc -pbkdf2 -salt > plain.txt.enc ; openssl enc -aes-256-cbc -pbkdf2 -d -in plain.txt.enc # pw file 
 grep -rl 'abc' . | xargs sed -i 's/abc/cdf/g'
 /bin/codex exec --skip-git-repo-check -m gpt-5.4-mini -c agent.effort=low "hi"
