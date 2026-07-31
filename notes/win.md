@@ -13,3 +13,10 @@
 Open up Preferences (default shortcut is F5)
 In the menu tree on the left, navigate to Playback
 Default window size should be at the top, set that to Do not use
+# wifi powersave bad for wsl
+```bash
+Set-NetAdapterAdvancedProperty -Name "Wi-Fi" -DisplayName "Power Saving" -RegistryValue 0
+Disable-NetAdapter -Name "Wi-Fi" -Confirm:$false
+Start-Sleep -Seconds 2
+Enable-NetAdapter -Name "Wi-Fi" -Confirm:$false
+```
