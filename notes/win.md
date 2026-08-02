@@ -17,3 +17,11 @@ Default window size should be at the top, set that to Do not use
 ```bash
 Set-NetAdapterAdvancedProperty -Name "Wi-Fi" -DisplayName "Power Saving" -RegistryValue 0
 ```
+```
+sudo apt update && sudo apt install -y openssh-server
+sudo sed -i 's/^#\?Port .*/Port 22/' /etc/ssh/sshd_config
+sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+echo -e "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf
+sudo systemctl enable ssh
+```
