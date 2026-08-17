@@ -25,3 +25,11 @@ sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 echo -e "[boot]\nsystemd=true" | sudo tee /etc/wsl.conf
 sudo systemctl enable ssh
 ```
+```
+PS C:\WINDOWS\system32> "[wsl2]`nnetworkingMode=mirrored" | Set-Content "$env:USERPROFILE\.wslconfig" -Encoding ascii
+PS C:\WINDOWS\system32> Get-Content "$env:USERPROFILE\.wslconfig"
+[wsl2]
+networkingMode=mirrored
+PS C:\WINDOWS\system32> wsl --shutdown
+PS C:\WINDOWS\system32> Set-NetFirewallHyperVVMSetting -Name '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -DefaultInboundAction Allow
+```
