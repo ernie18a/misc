@@ -1,3 +1,4 @@
+date +%H%M%S
 until ssh 192.168.213.199; do :; done
 rm -rf -- */ # rmdir *
 rm ~/.local/share/Trash 
