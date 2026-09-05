@@ -1,4 +1,4 @@
- /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command "shutdown.exe /s /f /t 0"
+ /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command 'shutdown.exe /s /f /t 0'
 0 * * * * e /bin/codex exec --skip-git-repo-check -c model_reasoning_effort=none hi
 0 1 * * * e /bin/codex exec --skip-git-repo-check -c model_reasoning_effort=none hi
 until ssh 192.168.213.199 2>/dev/null ; do :; done
