@@ -1,3 +1,4 @@
+rm /home/*/.cache/ /home/*/.codex/sessions/*
 UV_TOOL_DIR=/opt/uv-tools UV_TOOL_BIN_DIR=/usr/local/bin uv tool upgrade google-colab-cli
 1 1 * * * e /bin/codex exec --skip-git-repo-check hi
 /mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -NoProfile -Command 'shutdown.exe /s /f /t 0'
